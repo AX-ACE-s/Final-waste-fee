@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>우리동네 대형폐기물 수수료 확인</title>
+<link rel="stylesheet" href="/static/legacy_steps/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>우리동네 대형폐기물 수수료 확인</h1>
+    <p>사진이나 설명으로 품목을 찾고, 우리 지역 수수료표에 필요한 규격만 물어본 뒤, 근거와 함께 예상 수수료를 알려 드려요.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <ol class="steps" id="steps">
+    <li data-step="1">지역·품목</li>
+    <li data-step="2">규격 질문</li>
+    <li data-step="3">입력 확인</li>
+    <li data-step="4">예상 수수료</li>
+  </ol>
+
+  <!-- STEP 1 -->
+  <section class="card" id="step1">
+    <h2>1. 배출 지역과 품목을 알려 주세요</h2>
+
+    <label class="lbl" for="addr">주소로 찾기 <span class="muted">(선택)</span></label>
+    <div class="row">
+      <input id="addr" type="text" placeholder="예: 해운대구 우동, 부여읍">
+      <button class="btn ghost" id="addrBtn" type="button">검색</button>
+    </div>
+    <ul class="addr-list" id="addrList"></ul>
+
+    <div class="grid2">
+      <div>
+        <label class="lbl" for="sido">시·도</label>
+        <select id="sido"></select>
+      </div>
+      <div>
+        <label class="lbl" for="sigungu">시·군·구</label>
+        <select id="sigungu"></select>
+      </div>
+    </div>
+    <p class="muted small" id="regionInfo"></p>
+
+    <div class="photo" id="photoBox">
+      <p class="lbl">사진으로 찾기 <span class="muted">(AI 추천 · 선택)</span></p>
+      <div class="row">
+        <input id="photo" type="file" accept="image/jpeg,image/png,image/webp,image/gif" aria-label="물건 사진 (JPG·PNG·WEBP, 5MB 이하)">
+        <button class="btn ghost" id="identify" type="button">품목 찾기</button>
+      </div>
+      <img id="preview" class="preview" alt="올린 사진 미리보기" hidden>
+      <div id="aiResult" aria-live="polite"></div>
+      <p class="muted small">사진은 저장하지 않고 인식에만 사용해요. 사람 얼굴·개인정보가 찍힌 사진은 올리지 마세요.</p>
+    </div>
+
+    <label class="lbl" for="itemQ">버릴 물건 <span class="muted">(이름 또는 설명)</span></label>
+    <input id="itemQ" type="text" placeholder="예: 쇼파 / 폭 180cm 3인용 소파 / 450리터 냉장고" autocomplete="off">
+    <p class="muted small">품목 이름만 써도 되고, 크기·용량까지 쓰면 규격 질문을 건너뛰어요.</p>
+    <div class="read" id="descInfo" hidden></div>
+    <p class="err" id="itemErr" role="alert"></p>
+    <div id="itemList" class="chips"></div>
+    <details id="localOnlyBox" hidden>
+      <summary>그 밖의 우리 지역 품목 (표준 품목으로 아직 묶지 않은 것)</summary>
+      <div id="localOnly" class="chips"></div>
+    </details>
+
+    <div class="row end">
+      <label class="lbl inline" for="qty">개수</label>
+      <input id="qty" type="number" min="1" max="50" value="1" class="qty">
+      <button class="btn" id="start" type="button" disabled>규격 확인 시작</button>
+    </div>
+  </section>
+
+  <!-- STEP 2 -->
+  <section class="card" id="step2" hidden>
+    <h2>2. 규격 질문</h2>
+    <p class="muted" id="pickedItem"></p>
+    <ul class="trail" id="trail"></ul>
+    <div class="warn" id="qWarn" hidden></div>
+    <div id="qBox"></div>
+    <div class="row">
+      <button class="btn ghost" id="restart" type="button">처음부터</button>
+    </div>
+  </section>
+
+  <!-- STEP 3 -->
+  <section class="card" id="step3" hidden>
+    <h2>3. 입력 내용 확인</h2>
+    <ul class="trail" id="confirmTrail"></ul>
+    <div id="verifyBox"></div>
+    <div class="row">
+      <button class="btn ghost" id="back3" type="button">규격 다시 고르기</button>
+      <button class="btn" id="toResult" type="button">예상 수수료 보기</button>
+    </div>
+  </section>
+
+  <!-- STEP 4 -->
+  <section class="card" id="step4" hidden>
+    <h2>4. 예상 수수료</h2>
+    <div id="resultBox"></div>
+    <div class="row">
+      <button class="btn" id="addCart" type="button" hidden>이 품목을 목록에 담기</button>
+      <button class="btn ghost" id="copy" type="button" hidden>근거 복사</button>
+      <span id="copyMsg" class="muted small" role="status"></span>
+    </div>
+    <div class="row">
+      <button class="btn ghost" id="again" type="button">다른 물건 확인</button>
+    </div>
+  </section>
+
+  <section class="card" id="cartCard" hidden>
+    <h2>담은 품목 합계</h2>
+    <ul class="cart" id="cart"></ul>
+    <p class="fee small-fee" id="cartTotal"></p>
+    <p class="muted small" id="cartNote"></p>
+    <button class="btn ghost" id="cartClear" type="button">비우기</button>
+  </section>
+
+  <p class="foot muted small">이 결과는 공공데이터를 바탕으로 한 <b>예상</b> 금액이에요. 실제 신고 금액은 관할 지자체 기준을 따릅니다.</p>
+</main>
+<script src="/static/legacy_steps/app.js"></script>
+</body>
+</html>
