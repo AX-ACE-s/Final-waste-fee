@@ -2,7 +2,7 @@
 
 # 우리동네 대형폐기물 AI 수거비용 안내
 
-▶ **시연 영상:** https://youtu.be/RQVQO4rz0n8
+▶ **시연 영상:** https://youtube.com/watch?v=9XQCLklPkac&si=u0N-IfyuQEJR5REW
 
 ## 서비스 소개
 
