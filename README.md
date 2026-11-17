@@ -32,22 +32,4 @@ python app.py
 법제처 국가법령정보 공동활용: 지자체 폐기물 관리 조례 원문 링크
 e순환거버넌스 폐가전 무상방문수거 이용 안내
 
-폴더 구조
-waste-fee-ai/
-├── app.py              서버 시작 (기능 01~04 연결)
-├── recognition/        01 사진 기반 품목 인식
-├── spec_question/      02 지역 기준 규격 질문·실측 보정
-├── etl/                02 수수료표 정리 (지역·품목·규격 DB 만들기)
-├── core/               03 수수료 산정·근거 안내
-├── checklist/          04 배출 전 체크리스트·신청 연결
-├── static/             화면 (품목 확인 → 규격 확인 → 수수료·배출 안내)
-├── data/               공공데이터 원본과 정리한 표
-├── scripts/            데이터 받기 (수수료표, 조례)
-├── docs/               ERD, 기능 간 연결 문서
-├── tests/              테스트 (pytest)
-├── tools/demo_video/   시연 영상 만들기
-├── .env.example        인증키 양식 (.env는 올리지 않음)
-├── requirements.txt
-└── README.md
-
 청년공공AX서포터즈 · 팀 에이스
