@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>우리동네 대형폐기물 AI 수거비용 안내</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <!-- 상단바: 두 페이지(수수료 확인 · 배출 전 체크리스트) 공통. 디자인은 기능④ 이지윤 님 화면 기준 -->
+  <header class="top">
+    <div class="container top-in">
+      <a class="brand" href="/">우리동네 대형폐기물</a>
+      <nav class="gnb" aria-label="주요 메뉴">
+        <a href="/" aria-current="page">수수료 확인</a>
+        <a href="/checklist/">배출 전 체크리스트</a>
+      </nav>
+      <span class="scope">공공데이터 기준 · 전국 143개 지자체</span>
+    </div>
+  </header>
+
+  <div class="container">
+    <p id="mockNotice" class="notice notice-warn" hidden>
+      지금은 AI 키가 설정되지 않아 <strong>연습용 가짜 응답</strong>으로 동작합니다. 어떤 사진을 올려도 같은 결과가 나옵니다.
+    </p>
+    <p id="dataNotice" class="notice notice-warn" hidden></p>
+
+    <nav aria-label="진행 단계">
+      <ol id="stepper" class="stepper"></ol>
+    </nav>
+
+    <main id="screen" tabindex="-1"></main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">청년공공AX서포터즈 · 팀 에이스 · 예상 수수료는 공공데이터포털 전국대형폐기물수거수수료정보표준데이터 기준 참고용이며 실제 금액은 관할 지자체 기준을 따릅니다.</div>
+  </footer>
+
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>

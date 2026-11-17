@@ -1,0 +1,401 @@
+{
+  "basis": {
+    "updated": "2026-11-16",
+    "sources": [
+      {
+        "name": "자치구 폐기물 관리 조례 (국가법령정보센터 자치법규)",
+        "url": "https://www.law.go.kr"
+      },
+      {
+        "name": "폐가전 무상방문수거 이용 안내 (e순환거버넌스)",
+        "url": "https://www.15990903.or.kr/portal/cnts/userGuide.do"
+      }
+    ]
+  },
+  "housing": [
+    {
+      "id": "house",
+      "name": "단독·다세대 주택"
+    },
+    {
+      "id": "apartment",
+      "name": "아파트"
+    }
+  ],
+  "categories": [
+    {
+      "id": "furniture",
+      "name": "가구"
+    },
+    {
+      "id": "appliance",
+      "name": "가전"
+    },
+    {
+      "id": "living",
+      "name": "생활용품"
+    }
+  ],
+  "items": [
+    {
+      "id": "wardrobe",
+      "name": "장롱·옷장",
+      "category": "furniture"
+    },
+    {
+      "id": "bed",
+      "name": "침대 틀",
+      "category": "furniture"
+    },
+    {
+      "id": "mattress",
+      "name": "매트리스",
+      "category": "furniture"
+    },
+    {
+      "id": "sofa",
+      "name": "소파",
+      "category": "furniture"
+    },
+    {
+      "id": "desk",
+      "name": "책상·식탁",
+      "category": "furniture"
+    },
+    {
+      "id": "chair",
+      "name": "의자",
+      "category": "furniture"
+    },
+    {
+      "id": "drawer",
+      "name": "서랍장·수납장",
+      "category": "furniture"
+    },
+    {
+      "id": "bookshelf",
+      "name": "책장",
+      "category": "furniture"
+    },
+    {
+      "id": "vanity",
+      "name": "화장대·거울 달린 가구",
+      "category": "furniture"
+    },
+    {
+      "id": "fridge",
+      "name": "냉장고",
+      "category": "appliance"
+    },
+    {
+      "id": "washer",
+      "name": "세탁기·건조기",
+      "category": "appliance"
+    },
+    {
+      "id": "aircon",
+      "name": "에어컨",
+      "category": "appliance"
+    },
+    {
+      "id": "tv",
+      "name": "TV·모니터",
+      "category": "appliance"
+    },
+    {
+      "id": "small_appliance",
+      "name": "소형 가전",
+      "category": "appliance"
+    },
+    {
+      "id": "mirror",
+      "name": "거울·유리",
+      "category": "living"
+    },
+    {
+      "id": "bedding",
+      "name": "이불·카펫",
+      "category": "living"
+    },
+    {
+      "id": "bicycle",
+      "name": "자전거",
+      "category": "living"
+    },
+    {
+      "id": "piano",
+      "name": "피아노",
+      "category": "living"
+    },
+    {
+      "id": "etc",
+      "name": "그 밖의 물건",
+      "category": "living"
+    }
+  ],
+  "rules": [
+    {
+      "id": "free_pickup",
+      "stage": "before",
+      "text": "폐가전 무상방문수거 대상인지 먼저 확인했다",
+      "why": "대상이면 수수료 없이 수거됩니다. e순환거버넌스(1599-0903) 공식 안내에서 대상 품목과 조건을 확인하세요.",
+      "when": {
+        "category": [
+          "appliance"
+        ]
+      }
+    },
+    {
+      "id": "small_bundle",
+      "stage": "before",
+      "text": "소형 가전은 무상수거 조건(수량 등)을 확인했다",
+      "why": "소형 가전은 한 번에 내놓는 수량 조건이 있습니다. 조건에 안 맞으면 구청의 소형 폐가전 수거 안내를 확인하세요.",
+      "when": {
+        "items": [
+          "small_appliance"
+        ]
+      }
+    },
+    {
+      "id": "intact",
+      "stage": "before",
+      "text": "부품을 떼어내지 않은 원래 상태다",
+      "why": "주요 부품이 빠진 가전은 무상수거가 거부될 수 있습니다.",
+      "when": {
+        "category": [
+          "appliance"
+        ]
+      }
+    },
+    {
+      "id": "reuse",
+      "stage": "before",
+      "text": "아직 쓸 만하다면 나눔·재사용을 먼저 생각해 봤다",
+      "why": "상태가 좋으면 재활용센터나 나눔으로 넘기는 편이 수수료도 들지 않습니다."
+    },
+    {
+      "id": "spec",
+      "stage": "before",
+      "text": "품목과 규격(크기·인용·문짝 수 등)을 실제 물건과 맞춰 봤다",
+      "why": "신고한 규격과 실물이 다르면 수거되지 않거나 차액을 내야 합니다."
+    },
+    {
+      "id": "qty",
+      "stage": "before",
+      "text": "버릴 물건의 개수를 세어 신고할 수량을 정했다",
+      "why": "세트 가구는 구성품마다 따로 신고해야 하는 경우가 많습니다."
+    },
+    {
+      "id": "aircon_removed",
+      "stage": "before",
+      "text": "실외기까지 철거를 마쳤다",
+      "why": "수거 기사는 설치된 에어컨을 떼어 주지 않습니다. 실외기도 함께 신고하세요.",
+      "when": {
+        "items": [
+          "aircon"
+        ]
+      }
+    },
+    {
+      "id": "piano_carry",
+      "stage": "before",
+      "text": "집 밖으로 옮길 방법을 정했다",
+      "why": "무게가 커서 직접 옮기기 어렵습니다. 구청에 운반 지원 서비스가 있는지 확인하세요.",
+      "when": {
+        "items": [
+          "piano"
+        ]
+      }
+    },
+    {
+      "id": "bedding_bag",
+      "stage": "before",
+      "text": "종량제 봉투에 들어가는 크기인지 확인했다",
+      "why": "봉투에 담기는 이불·카펫은 대형폐기물 신고 없이 버릴 수 있는 경우가 있습니다. 구청 기준을 확인하세요.",
+      "when": {
+        "items": [
+          "bedding"
+        ]
+      }
+    },
+    {
+      "id": "empty",
+      "stage": "prepare",
+      "text": "안에 든 물건을 모두 비웠다",
+      "why": "내용물이 남아 있으면 수거하지 않습니다.",
+      "when": {
+        "items": [
+          "wardrobe",
+          "drawer",
+          "bookshelf",
+          "vanity",
+          "desk",
+          "fridge",
+          "washer"
+        ]
+      }
+    },
+    {
+      "id": "fridge_clean",
+      "stage": "prepare",
+      "text": "전원을 미리 뽑아 성에와 물기를 뺐다",
+      "why": "성에가 녹으면서 물이 흘러나옵니다. 하루 전에 전원을 뽑아 두세요.",
+      "when": {
+        "items": [
+          "fridge"
+        ]
+      }
+    },
+    {
+      "id": "washer_drain",
+      "stage": "prepare",
+      "text": "남은 물을 빼고 호스를 본체에 묶었다",
+      "why": "",
+      "when": {
+        "items": [
+          "washer"
+        ]
+      }
+    },
+    {
+      "id": "door_fix",
+      "stage": "prepare",
+      "text": "문과 서랍이 열리지 않게 끈이나 테이프로 고정했다",
+      "why": "옮기다가 문이 열리면 다칠 수 있습니다.",
+      "when": {
+        "items": [
+          "wardrobe",
+          "drawer",
+          "vanity",
+          "fridge",
+          "washer"
+        ]
+      }
+    },
+    {
+      "id": "glass_tape",
+      "stage": "prepare",
+      "text": "유리·거울 면에 테이프를 붙여 깨져도 흩어지지 않게 했다",
+      "why": "‘유리 주의’라고 적어 두면 수거하는 분이 다치지 않습니다.",
+      "when": {
+        "items": [
+          "vanity",
+          "mirror",
+          "tv",
+          "desk"
+        ]
+      }
+    },
+    {
+      "id": "disassemble",
+      "stage": "prepare",
+      "text": "분해했다면 부품을 한데 묶어 한 덩어리로 만들었다",
+      "why": "흩어진 부품은 신고한 물건으로 알아보기 어려워 남겨질 수 있습니다.",
+      "when": {
+        "items": [
+          "bed",
+          "desk",
+          "bookshelf",
+          "wardrobe",
+          "chair"
+        ]
+      }
+    },
+    {
+      "id": "mattress_dry",
+      "stage": "prepare",
+      "text": "젖지 않게 비닐로 덮거나 비 오는 날을 피했다",
+      "why": "젖으면 무거워져 수거가 어려워집니다.",
+      "when": {
+        "items": [
+          "mattress",
+          "sofa",
+          "bedding"
+        ]
+      }
+    },
+    {
+      "id": "bedding_tie",
+      "stage": "prepare",
+      "text": "끈으로 단단히 묶었다",
+      "why": "",
+      "when": {
+        "items": [
+          "bedding"
+        ]
+      }
+    },
+    {
+      "id": "cord",
+      "stage": "prepare",
+      "text": "전선과 리모컨 등 딸린 물건을 본체에 묶었다",
+      "why": "",
+      "when": {
+        "category": [
+          "appliance"
+        ]
+      }
+    },
+    {
+      "id": "bike_lock",
+      "stage": "prepare",
+      "text": "자물쇠를 풀어 두었다",
+      "why": "묶여 있는 자전거는 수거할 수 없습니다.",
+      "when": {
+        "items": [
+          "bicycle"
+        ]
+      }
+    },
+    {
+      "id": "mark",
+      "stage": "putout",
+      "text": "신고필증(스티커)을 붙이거나 신고번호를 잘 보이는 곳에 적었다",
+      "why": "필증을 붙이는 구와 신고번호만 적는 구가 있습니다. 표시가 없으면 무단투기로 처리될 수 있습니다.",
+      "district_field": "marking"
+    },
+    {
+      "id": "place_house",
+      "stage": "putout",
+      "text": "수거 차량이 들어올 수 있는 내 집 앞에 내놓는다",
+      "why": "",
+      "when": {
+        "housing": [
+          "house"
+        ]
+      },
+      "district_field": "place"
+    },
+    {
+      "id": "place_apt",
+      "stage": "putout",
+      "text": "단지 안 대형폐기물 지정 장소에 내놓는다",
+      "why": "지정 장소는 관리사무소에서 알려 줍니다. 단지에 따라 관리사무소에 먼저 알려야 합니다.",
+      "when": {
+        "housing": [
+          "apartment"
+        ]
+      },
+      "district_field": "place"
+    },
+    {
+      "id": "time",
+      "stage": "putout",
+      "text": "신고한 배출일과 배출 시간에 맞춰 내놓는다",
+      "why": "너무 일찍 내놓으면 통행에 방해가 되고 민원이 생깁니다.",
+      "district_field": "discharge_time"
+    },
+    {
+      "id": "path",
+      "stage": "putout",
+      "text": "보도·소화전·점자블록·주차장 출입구를 막지 않는다",
+      "why": ""
+    },
+    {
+      "id": "photo",
+      "stage": "putout",
+      "text": "내놓은 모습을 사진으로 남겼다",
+      "why": "수거가 늦어지거나 안 됐을 때 문의 자료로 쓸 수 있습니다."
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "_안내": "apply_url·marking·discharge_time·place는 각 구청 안내와 조례를 확인한 뒤 채우고, 확인한 날짜를 verified_on(YYYY-MM-DD)에 적습니다. 비워 두면 화면에 '구청 안내에서 확인'으로 표시되고 신청 버튼은 구청 누리집으로 연결됩니다.",
+  "districts": [
+    {
+      "name": "종로구",
+      "homepage": "https://www.jongno.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "중구",
+      "homepage": "https://www.junggu.seoul.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "용산구",
+      "homepage": "https://www.yongsan.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "성동구",
+      "homepage": "https://www.sd.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "광진구",
+      "homepage": "https://www.gwangjin.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "동대문구",
+      "homepage": "https://www.ddm.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "중랑구",
+      "homepage": "https://www.jungnang.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "성북구",
+      "homepage": "https://www.sb.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "강북구",
+      "homepage": "https://www.gangbuk.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "도봉구",
+      "homepage": "https://www.dobong.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "노원구",
+      "homepage": "https://www.nowon.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "은평구",
+      "homepage": "https://www.ep.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "서대문구",
+      "homepage": "https://www.sdm.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "마포구",
+      "homepage": "https://www.mapo.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "양천구",
+      "homepage": "https://www.yangcheon.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "강서구",
+      "homepage": "https://www.gangseo.seoul.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "구로구",
+      "homepage": "https://www.guro.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "금천구",
+      "homepage": "https://www.geumcheon.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "영등포구",
+      "homepage": "https://www.ydp.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "동작구",
+      "homepage": "https://www.dongjak.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "관악구",
+      "homepage": "https://www.gwanak.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "서초구",
+      "homepage": "https://www.seocho.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "강남구",
+      "homepage": "https://www.gangnam.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "송파구",
+      "homepage": "https://www.songpa.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    },
+    {
+      "name": "강동구",
+      "homepage": "https://www.gangdong.go.kr",
+      "apply_url": null,
+      "marking": null,
+      "discharge_time": null,
+      "place": null,
+      "verified_on": null
+    }
+  ]
+}
