@@ -1,0 +1,7 @@
+.env
+__pycache__/
+.pytest_cache/
+data/processed/
+tools/demo_video/work/
+tools/demo_video/demo.mp4
+tools/demo_video/demo.webm

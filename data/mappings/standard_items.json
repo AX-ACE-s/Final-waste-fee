@@ -1,0 +1,1000 @@
+{
+ "_comment": "표준 품목 사전. synonyms는 normalize_name() 결과(공백·괄호 제거, 오탈자 교정 후)와 '정확히' 비교한다. 새 지자체 데이터에서 매핑 실패 품목이 나오면 reports/unmapped_items.csv를 보고 여기에 동의어를 추가한다.",
+ "items": [
+  {
+   "code": "SOFA",
+   "name": "소파",
+   "category": "가구류",
+   "synonyms": [
+    "소파",
+    "쇼파"
+   ]
+  },
+  {
+   "code": "MATTRESS",
+   "name": "침대 매트리스",
+   "category": "가구류",
+   "synonyms": [
+    "침대매트리스",
+    "매트리스"
+   ]
+  },
+  {
+   "code": "BED_FRAME",
+   "name": "침대틀",
+   "category": "가구류",
+   "synonyms": [
+    "침대틀",
+    "침대침대틀"
+   ]
+  },
+  {
+   "code": "BED_SET",
+   "name": "침대 세트(틀+매트리스)",
+   "category": "가구류",
+   "synonyms": [
+    "침대세트"
+   ]
+  },
+  {
+   "code": "STONE_BED",
+   "name": "돌침대·흙침대",
+   "category": "가구류",
+   "synonyms": [
+    "돌침대",
+    "흙침대",
+    "돌침대흙침대"
+   ]
+  },
+  {
+   "code": "BABY_BED",
+   "name": "유아용 침대",
+   "category": "가구류",
+   "synonyms": [
+    "유아용침대",
+    "침대유아용침대"
+   ]
+  },
+  {
+   "code": "WARDROBE",
+   "name": "장롱",
+   "category": "가구류",
+   "synonyms": [
+    "장롱",
+    "농",
+    "장농"
+   ]
+  },
+  {
+   "code": "CLOSET",
+   "name": "옷장",
+   "category": "가구류",
+   "synonyms": [
+    "옷장",
+    "비키니옷장"
+   ]
+  },
+  {
+   "code": "DRAWER",
+   "name": "서랍장",
+   "category": "가구류",
+   "synonyms": [
+    "서랍장"
+   ]
+  },
+  {
+   "code": "SHOE_CABINET",
+   "name": "신발장",
+   "category": "가구류",
+   "synonyms": [
+    "신발장"
+   ]
+  },
+  {
+   "code": "DESK",
+   "name": "책상",
+   "category": "가구류",
+   "synonyms": [
+    "책상",
+    "컴퓨터책상",
+    "좌식책상"
+   ]
+  },
+  {
+   "code": "CHAIR",
+   "name": "의자",
+   "category": "가구류",
+   "synonyms": [
+    "의자"
+   ]
+  },
+  {
+   "code": "DINING_TABLE",
+   "name": "식탁",
+   "category": "가구류",
+   "synonyms": [
+    "식탁"
+   ]
+  },
+  {
+   "code": "LOW_TABLE",
+   "name": "상(밥상·교자상)",
+   "category": "가구류",
+   "synonyms": [
+    "상",
+    "밥상",
+    "교자상",
+    "밥상교자상"
+   ]
+  },
+  {
+   "code": "BOOKCASE",
+   "name": "책장",
+   "category": "가구류",
+   "synonyms": [
+    "책장"
+   ]
+  },
+  {
+   "code": "BOOKSHELF",
+   "name": "책꽂이",
+   "category": "가구류",
+   "synonyms": [
+    "책꽂이",
+    "탁상용책꽂이"
+   ]
+  },
+  {
+   "code": "DISPLAY_CABINET",
+   "name": "장식장·진열장",
+   "category": "가구류",
+   "synonyms": [
+    "장식장",
+    "진열장",
+    "장식장진열장"
+   ]
+  },
+  {
+   "code": "LIVING_CABINET",
+   "name": "거실장(문갑·TV받침)",
+   "category": "가구류",
+   "synonyms": [
+    "거실장식장",
+    "거실장",
+    "문갑",
+    "tv받침"
+   ]
+  },
+  {
+   "code": "VANITY",
+   "name": "화장대",
+   "category": "가구류",
+   "synonyms": [
+    "화장대"
+   ]
+  },
+  {
+   "code": "SINK",
+   "name": "싱크대",
+   "category": "가구류",
+   "synonyms": [
+    "싱크대"
+   ]
+  },
+  {
+   "code": "CUPBOARD",
+   "name": "찬장",
+   "category": "가구류",
+   "synonyms": [
+    "찬장",
+    "싱크대찬장"
+   ]
+  },
+  {
+   "code": "HANGER",
+   "name": "옷걸이",
+   "category": "가구류",
+   "synonyms": [
+    "옷걸이"
+   ]
+  },
+  {
+   "code": "CABINET",
+   "name": "캐비닛",
+   "category": "가구류",
+   "synonyms": [
+    "캐비닛",
+    "캐비넷"
+   ]
+  },
+  {
+   "code": "MIRROR",
+   "name": "거울",
+   "category": "가구류",
+   "synonyms": [
+    "거울"
+   ]
+  },
+  {
+   "code": "TV",
+   "name": "텔레비전",
+   "category": "가전제품류",
+   "synonyms": [
+    "텔레비전",
+    "tv",
+    "티비"
+   ]
+  },
+  {
+   "code": "FRIDGE",
+   "name": "냉장고",
+   "category": "가전제품류",
+   "synonyms": [
+    "냉장고"
+   ]
+  },
+  {
+   "code": "WASHER",
+   "name": "세탁기(일반)",
+   "category": "가전제품류",
+   "synonyms": [
+    "세탁기"
+   ]
+  },
+  {
+   "code": "DRUM_WASHER",
+   "name": "드럼세탁기",
+   "category": "가전제품류",
+   "synonyms": [
+    "드럼세탁기"
+   ]
+  },
+  {
+   "code": "DRYER",
+   "name": "의류건조기",
+   "category": "가전제품류",
+   "synonyms": [
+    "건조기",
+    "의류건조기"
+   ]
+  },
+  {
+   "code": "AIRCON",
+   "name": "에어컨",
+   "category": "가전제품류",
+   "synonyms": [
+    "에어컨"
+   ]
+  },
+  {
+   "code": "WATER_PURIFIER",
+   "name": "정수기",
+   "category": "가전제품류",
+   "synonyms": [
+    "정수기"
+   ]
+  },
+  {
+   "code": "ELEC_MAT",
+   "name": "전기매트·옥매트",
+   "category": "기타",
+   "synonyms": [
+    "전기매트",
+    "옥매트",
+    "황토매트",
+    "전기장판"
+   ]
+  },
+  {
+   "code": "PIANO",
+   "name": "피아노",
+   "category": "기타",
+   "synonyms": [
+    "피아노"
+   ]
+  },
+  {
+   "code": "BICYCLE",
+   "name": "자전거",
+   "category": "기타",
+   "synonyms": [
+    "자전거"
+   ]
+  },
+  {
+   "code": "STROLLER",
+   "name": "유모차",
+   "category": "기타",
+   "synonyms": [
+    "유모차"
+   ]
+  },
+  {
+   "code": "ICEBOX",
+   "name": "아이스박스",
+   "category": "기타",
+   "synonyms": [
+    "아이스박스"
+   ]
+  },
+  {
+   "code": "AQUARIUM",
+   "name": "수족관·어항",
+   "category": "기타",
+   "synonyms": [
+    "수족관",
+    "어항"
+   ]
+  },
+  {
+   "code": "FRAME",
+   "name": "액자",
+   "category": "기타",
+   "synonyms": [
+    "액자"
+   ]
+  },
+  {
+   "code": "WALL_CLOCK",
+   "name": "벽시계",
+   "category": "기타",
+   "synonyms": [
+    "벽시계",
+    "시계"
+   ]
+  },
+  {
+   "code": "BATHTUB",
+   "name": "욕조",
+   "category": "기타",
+   "synonyms": [
+    "욕조"
+   ]
+  },
+  {
+   "code": "BOILER",
+   "name": "보일러",
+   "category": "기타",
+   "synonyms": [
+    "보일러"
+   ]
+  },
+  {
+   "code": "SIGNBOARD",
+   "name": "간판",
+   "category": "기타",
+   "synonyms": [
+    "간판"
+   ]
+  },
+  {
+   "code": "TIRE",
+   "name": "타이어",
+   "category": "기타",
+   "synonyms": [
+    "타이어",
+    "폐타이어"
+   ]
+  },
+  {
+   "code": "FIRE_EXT",
+   "name": "소화기",
+   "category": "기타",
+   "synonyms": [
+    "소화기",
+    "폐소화기"
+   ]
+  },
+  {
+   "code": "BLIND",
+   "name": "블라인드",
+   "category": "기타",
+   "synonyms": [
+    "블라인드"
+   ]
+  },
+  {
+   "code": "CARPET",
+   "name": "카펫",
+   "category": "기타",
+   "synonyms": [
+    "카페트",
+    "카펫"
+   ]
+  },
+  {
+   "code": "SEWING_MACHINE",
+   "name": "재봉틀·미싱",
+   "category": "기타",
+   "synonyms": [
+    "재봉틀",
+    "미싱"
+   ]
+  },
+  {
+   "code": "BED",
+   "name": "침대(지역 통합 품목)",
+   "category": "가구류",
+   "synonyms": [
+    "침대"
+   ]
+  },
+  {
+   "code": "RICE_BIN",
+   "name": "쌀통",
+   "category": "가구류",
+   "synonyms": [
+    "쌀통"
+   ]
+  },
+  {
+   "code": "AIR_PURIFIER",
+   "name": "공기청정기",
+   "category": "가전제품류",
+   "synonyms": [
+    "공기청정기"
+   ]
+  },
+  {
+   "code": "DOOR",
+   "name": "문짝·창문",
+   "category": "기타",
+   "synonyms": [
+    "문짝",
+    "문",
+    "창문",
+    "창문틀",
+    "방충망"
+   ]
+  },
+  {
+   "code": "STOVE",
+   "name": "난로",
+   "category": "가전제품류",
+   "synonyms": [
+    "난로",
+    "석유난로",
+    "전기난로"
+   ]
+  },
+  {
+   "code": "HEATER",
+   "name": "온풍기·히터",
+   "category": "가전제품류",
+   "synonyms": [
+    "온풍기",
+    "팬히터",
+    "전기히터",
+    "가스히터",
+    "가스히터팬히터"
+   ]
+  },
+  {
+   "code": "FAN",
+   "name": "선풍기",
+   "category": "가전제품류",
+   "synonyms": [
+    "선풍기"
+   ]
+  },
+  {
+   "code": "COPIER",
+   "name": "복사기",
+   "category": "가전제품류",
+   "synonyms": [
+    "복사기"
+   ]
+  },
+  {
+   "code": "PRINTER",
+   "name": "프린터",
+   "category": "가전제품류",
+   "synonyms": [
+    "프린터",
+    "프린터기",
+    "프린트기"
+   ]
+  },
+  {
+   "code": "FAX",
+   "name": "팩스",
+   "category": "가전제품류",
+   "synonyms": [
+    "팩스",
+    "팩스기기",
+    "팩시밀리"
+   ]
+  },
+  {
+   "code": "COMPUTER",
+   "name": "컴퓨터",
+   "category": "가전제품류",
+   "synonyms": [
+    "컴퓨터",
+    "컴퓨터본체",
+    "모니터"
+   ]
+  },
+  {
+   "code": "WATER_TANK",
+   "name": "물탱크",
+   "category": "기타",
+   "synonyms": [
+    "물탱크"
+   ]
+  },
+  {
+   "code": "TOILET",
+   "name": "변기",
+   "category": "기타",
+   "synonyms": [
+    "변기",
+    "양변기",
+    "좌변기"
+   ]
+  },
+  {
+   "code": "BIDET",
+   "name": "비데",
+   "category": "가전제품류",
+   "synonyms": [
+    "비데"
+   ]
+  },
+  {
+   "code": "WASHBASIN",
+   "name": "세면대",
+   "category": "기타",
+   "synonyms": [
+    "세면대",
+    "세면기"
+   ]
+  },
+  {
+   "code": "FOLDING_SCREEN",
+   "name": "병풍",
+   "category": "기타",
+   "synonyms": [
+    "병풍"
+   ]
+  },
+  {
+   "code": "SPIN_DRYER",
+   "name": "탈수기",
+   "category": "가전제품류",
+   "synonyms": [
+    "탈수기"
+   ]
+  },
+  {
+   "code": "FLOOR_MAT",
+   "name": "장판",
+   "category": "기타",
+   "synonyms": [
+    "장판"
+   ]
+  },
+  {
+   "code": "JAR",
+   "name": "항아리·장독",
+   "category": "기타",
+   "synonyms": [
+    "항아리",
+    "장독"
+   ]
+  },
+  {
+   "code": "BABY_WALKER",
+   "name": "보행기",
+   "category": "기타",
+   "synonyms": [
+    "보행기"
+   ]
+  },
+  {
+   "code": "CAR_SEAT",
+   "name": "카시트",
+   "category": "기타",
+   "synonyms": [
+    "카시트",
+    "유아용카시트"
+   ]
+  },
+  {
+   "code": "VACUUM",
+   "name": "청소기",
+   "category": "가전제품류",
+   "synonyms": [
+    "청소기",
+    "진공청소기"
+   ]
+  },
+  {
+   "code": "HUMIDIFIER",
+   "name": "가습기·제습기",
+   "category": "가전제품류",
+   "synonyms": [
+    "가습기",
+    "제습기"
+   ]
+  },
+  {
+   "code": "BEDDING",
+   "name": "이불·침구류",
+   "category": "기타",
+   "synonyms": [
+    "이불",
+    "침구류",
+    "베개",
+    "전기담요"
+   ]
+  },
+  {
+   "code": "MASSAGE_CHAIR",
+   "name": "안마의자",
+   "category": "가전제품류",
+   "synonyms": [
+    "안마의자"
+   ]
+  },
+  {
+   "code": "SAFE",
+   "name": "금고",
+   "category": "기타",
+   "synonyms": [
+    "금고"
+   ]
+  },
+  {
+   "code": "DISHWASHER",
+   "name": "식기세척기",
+   "category": "가전제품류",
+   "synonyms": [
+    "식기세척기"
+   ]
+  },
+  {
+   "code": "DISH_DRYER",
+   "name": "식기건조기",
+   "category": "가전제품류",
+   "synonyms": [
+    "식기건조기"
+   ]
+  },
+  {
+   "code": "FLOWERPOT",
+   "name": "화분",
+   "category": "기타",
+   "synonyms": [
+    "화분"
+   ]
+  },
+  {
+   "code": "BAG",
+   "name": "가방",
+   "category": "기타",
+   "synonyms": [
+    "가방",
+    "가방류",
+    "여행용가방"
+   ]
+  },
+  {
+   "code": "MICROWAVE",
+   "name": "전자레인지",
+   "category": "가전제품류",
+   "synonyms": [
+    "전자레인지",
+    "전자렌지"
+   ]
+  },
+  {
+   "code": "GAS_RANGE",
+   "name": "가스레인지·오븐레인지",
+   "category": "가전제품류",
+   "synonyms": [
+    "가스레인지",
+    "가스렌지",
+    "가스오븐레인지",
+    "가스오븐렌지",
+    "전기오븐레인지"
+   ]
+  },
+  {
+   "code": "RUBBER_TUB",
+   "name": "고무통",
+   "category": "기타",
+   "synonyms": [
+    "고무통",
+    "드럼통"
+   ]
+  },
+  {
+   "code": "LAUNDRY_RACK",
+   "name": "빨래건조대",
+   "category": "기타",
+   "synonyms": [
+    "빨래건조대",
+    "건조대"
+   ]
+  },
+  {
+   "code": "WHEELCHAIR",
+   "name": "휠체어",
+   "category": "기타",
+   "synonyms": [
+    "휠체어"
+   ]
+  },
+  {
+   "code": "EXERCISE",
+   "name": "운동기구",
+   "category": "기타",
+   "synonyms": [
+    "운동기구",
+    "헬스기구",
+    "러닝머신",
+    "런닝머신"
+   ]
+  },
+  {
+   "code": "AUDIO",
+   "name": "오디오·전축",
+   "category": "가전제품류",
+   "synonyms": [
+    "오디오",
+    "전축",
+    "오디오세트"
+   ]
+  },
+  {
+   "code": "SPEAKER",
+   "name": "스피커",
+   "category": "가전제품류",
+   "synonyms": [
+    "스피커"
+   ]
+  },
+  {
+   "code": "IRON",
+   "name": "다리미",
+   "category": "가전제품류",
+   "synonyms": [
+    "다리미"
+   ]
+  },
+  {
+   "code": "IRON_BOARD",
+   "name": "다리미판",
+   "category": "기타",
+   "synonyms": [
+    "다리미판",
+    "다림이판"
+   ]
+  },
+  {
+   "code": "TENT",
+   "name": "텐트·천막",
+   "category": "기타",
+   "synonyms": [
+    "텐트",
+    "천막"
+   ]
+  },
+  {
+   "code": "MAT",
+   "name": "돗자리·대자리",
+   "category": "기타",
+   "synonyms": [
+    "돗자리",
+    "대자리"
+   ]
+  },
+  {
+   "code": "TABLE",
+   "name": "탁자",
+   "category": "가구류",
+   "synonyms": [
+    "탁자",
+    "거실용탁자",
+    "협탁",
+    "테이블"
+   ]
+  },
+  {
+   "code": "PARTITION",
+   "name": "칸막이·파티션",
+   "category": "가구류",
+   "synonyms": [
+    "파티션",
+    "칸막이"
+   ]
+  },
+  {
+   "code": "RICE_COOKER",
+   "name": "전기밥솥",
+   "category": "가전제품류",
+   "synonyms": [
+    "전기밥솥"
+   ]
+  },
+  {
+   "code": "CAT_TOWER",
+   "name": "캣타워",
+   "category": "기타",
+   "synonyms": [
+    "캣타워",
+    "고양이타워"
+   ]
+  },
+  {
+   "code": "LIGHTING",
+   "name": "조명기구",
+   "category": "기타",
+   "synonyms": [
+    "조명기구",
+    "조명",
+    "스탠드"
+   ]
+  },
+  {
+   "code": "VIDEO",
+   "name": "비디오",
+   "category": "가전제품류",
+   "synonyms": [
+    "비디오"
+   ]
+  },
+  {
+   "code": "GAME_MACHINE",
+   "name": "오락기",
+   "category": "가전제품류",
+   "synonyms": [
+    "오락기"
+   ]
+  },
+  {
+   "code": "VENDING",
+   "name": "자동판매기",
+   "category": "가전제품류",
+   "synonyms": [
+    "자동판매기",
+    "자판기"
+   ]
+  },
+  {
+   "code": "KIMCHI_FRIDGE",
+   "name": "김치냉장고",
+   "category": "가전제품류",
+   "synonyms": [
+    "김치냉장고"
+   ]
+  },
+  {
+   "code": "MANNEQUIN",
+   "name": "마네킹",
+   "category": "기타",
+   "synonyms": [
+    "마네킹"
+   ]
+  },
+  {
+   "code": "VENT_FAN",
+   "name": "환풍기·배기후드",
+   "category": "가전제품류",
+   "synonyms": [
+    "환풍기",
+    "배기후드"
+   ]
+  },
+  {
+   "code": "SKI",
+   "name": "스키·보드",
+   "category": "기타",
+   "synonyms": [
+    "스키",
+    "스키보드",
+    "보드"
+   ]
+  },
+  {
+   "code": "TRASH_CAN",
+   "name": "쓰레기통",
+   "category": "기타",
+   "synonyms": [
+    "쓰레기통"
+   ]
+  },
+  {
+   "code": "CUTTING_BOARD",
+   "name": "도마",
+   "category": "기타",
+   "synonyms": [
+    "도마"
+   ]
+  },
+  {
+   "code": "CUSHION",
+   "name": "방석·쿠션",
+   "category": "기타",
+   "synonyms": [
+    "방석",
+    "쿠션",
+    "토퍼"
+   ]
+  },
+  {
+   "code": "CURTAIN",
+   "name": "커튼·커튼봉",
+   "category": "기타",
+   "synonyms": [
+    "커튼",
+    "커튼봉"
+   ]
+  },
+  {
+   "code": "CLOTHES_RACK",
+   "name": "행거",
+   "category": "가구류",
+   "synonyms": [
+    "행거"
+   ]
+  },
+  {
+   "code": "DOG_HOUSE",
+   "name": "개집",
+   "category": "기타",
+   "synonyms": [
+    "개집",
+    "강아지집"
+   ]
+  },
+  {
+   "code": "FILE_CABINET",
+   "name": "파일캐비닛",
+   "category": "가구류",
+   "synonyms": [
+    "파일캐비닛",
+    "화일캐비넷",
+    "화일캐비닛"
+   ]
+  },
+  {
+   "code": "WREATH",
+   "name": "화환",
+   "category": "기타",
+   "synonyms": [
+    "화환"
+   ]
+  },
+  {
+   "code": "WHITEBOARD",
+   "name": "칠판·화이트보드",
+   "category": "기타",
+   "synonyms": [
+    "칠판",
+    "게시판화이트보드",
+    "보드판"
+   ]
+  },
+  {
+   "code": "SIDE_TABLE",
+   "name": "차탁자",
+   "category": "가구류",
+   "synonyms": [
+    "차탁자"
+   ]
+  }
+ ],
+ "typos": {
+  "쇼파": "소파",
+  "씽크대": "싱크대",
+  "책꽃이": "책꽂이",
+  "캐비넷": "캐비닛",
+  "카펫트": "카페트",
+  "장농": "장롱",
+  "렌지": "레인지",
+  "런닝": "러닝",
+  "화일": "파일"
+ }
+}
