@@ -1,7 +1,0 @@
-.env
-__pycache__/
-.pytest_cache/
-data/processed/
-tools/demo_video/models/
-tools/demo_video/work/
-tools/demo_video/demo.mp4
