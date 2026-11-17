@@ -1,4 +1,4 @@
-# Full-waste-fee
+# Final-waste-fee
 
 # 우리동네 대형폐기물 AI 수거비용 안내
 
